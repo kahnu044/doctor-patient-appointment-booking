@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/dbConnection');
+const doctorRoutes = require('./routes/doctorRoutes');
 
 const port = process.env.PORT || 3002;
 
@@ -8,6 +9,8 @@ app.use(express.json());
 
 // Database connection
 connectDB();
+
+app.use('/doctor', doctorRoutes);
 
 app.get('/', (req, res) => {
     res.json({
