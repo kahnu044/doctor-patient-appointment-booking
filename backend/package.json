@@ -1,0 +1,19 @@
+{
+  "name": "doctor-patient-appointment-booking",
+  "version": "1.0.0",
+  "description": "A comprehensive system for managing doctor appointments, allowing patients to book consultations, and doctors to manage their availability and schedules efficiently. Built with Node.js and Express, featuring secure authentication, appointment scheduling, and real-time availability updates.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
